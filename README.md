@@ -8,14 +8,27 @@ npm install
 ```
 
 ###MongoDB
+
+### Data Structure
+
+Params | Type | Description 
+------ | ---- | --------------
+appName | String | name of App 
+platform | String | iOS or Android (case-insensitive)
+app_version | String | version of App
+file | String | the name of the Script file
+version | String | the version of the Script file
+
+
 ### Test Data
 
 ```
 db.relationship.insert({
-    appName: "AAA",
-    platform: "iOS",
-    version: "1.0.0",
-    file: "patch-ios-1.0.0"
+    "appName" : "hfs",
+     "platform" : "iOS",
+     "app_version" : "2.0.0",
+     "file" : "patch-ios-2.0.0.js",
+     "version" : 0
 },
 {
     appName: "AAA",
@@ -47,15 +60,7 @@ Put private rsa key (pem) into `pemfile` folder
 
 
 
-### Data Structure
 
-Params | Type | Description 
------- | ---- | --------------
-appName | String | name of App 
-platform | String | iOS or Android (case-insensitive)
-app_version | String | version of App
-file | String | the name of the Script file
-version | String | the version of the Script file
 
 
 ```
@@ -66,6 +71,6 @@ http://localhost:3000/jspatch?deviceType=iOS&appVersion=2.0.0&appName=hfs
 http://localhost:3000/jspatch
 
 // GET -> Check Version
-http://localhost:3000/jspatch/check?deviceType=iOS&appVersion=2.0.0&appName=hfs&localVersion
+http://localhost:3000/jspatch/check?deviceType=iOS&appVersion=2.0.0&appName=hfs&localVersion=1.0
 
 ```
