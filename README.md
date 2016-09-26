@@ -43,15 +43,20 @@ Put JS files into `jsfiles` folder
 
 ### Security
 
+Put private rsa key (pem) into `pemfile` folder
 
 
-### Request with URL
+
+### Data Structure
 
 Params | Type | Description 
 ------ | ---- | --------------
 appName | String | name of App 
-deviceType | String | iOS or Android (case-insensitive)
-appVersion | String | version of App
+platform | String | iOS or Android (case-insensitive)
+app_version | String | version of App
+file | String | the name of the Script file
+version | String | the version of the Script file
+
 
 ```
 // GET -> Get js file
@@ -59,4 +64,8 @@ http://localhost:3000/jspatch?deviceType=iOS&appVersion=2.0.0&appName=hfs
 
 // POST -> Refresh Cache
 http://localhost:3000/jspatch
+
+// GET -> Check Version
+http://localhost:3000/jspatch/check?deviceType=iOS&appVersion=2.0.0&appName=hfs&localVersion
+
 ```
