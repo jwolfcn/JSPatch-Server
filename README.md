@@ -1,5 +1,6 @@
 # JSPatch-Server
-practice with node.js
+JSPatch server with node.js.  
+More about:  http://www.jwolf.cn/p/57e91d56c26275f968710e77
 
 ##How to use
 ### Install packages
