@@ -24,29 +24,33 @@ version | String | the version of the Script file
 
 ```
 db.relationship.insert({
-    "appName" : "hfs",
-     "platform" : "iOS",
-     "app_version" : "2.0.0",
-     "file" : "patch-ios-2.0.0.js",
-     "version" : 0
+    appName : "hfs",
+     platform : "iOS",
+     app_version : "2.0.0",
+     file : "patch-ios-2.0.0.js",
+     version : 0
 },
 {
     appName: "AAA",
     platform: "iOS",
-    version: "2.0.0",
-    file: "patch-ios-1.0.0"
+    app_version: "2.0.0",
+    file: "patch-ios-1.0.0",
+    version : 0
+
 },
 {
     appName: "AAA",
     platform: "Android",
-    version: "1.0.0",
-    file: "patch-android-1.0.0"
+    app_version: "1.0.0",
+    file: "patch-android-1.0.0",
+    version : 0
 },
 {
     appName: "BBB",
     platform: "Android",
-    version: "2.0.0",
-    file: "patch-android-2.0.0"
+    app_version: "2.0.0",
+    file: "patch-android-2.0.0",
+    version : 0
 })
 ```
 
